@@ -1,0 +1,1 @@
+/usr/bin/c++   -g  -lSDL -lGL -lSDL_image -lSDL_ttf -zmuldefs CMakeFiles/Xonix.dir/src/enemigo.o CMakeFiles/Xonix.dir/src/poligono.o CMakeFiles/Xonix.dir/src/timer.o CMakeFiles/Xonix.dir/src/personaje.o CMakeFiles/Xonix.dir/main.o CMakeFiles/Xonix.dir/src/xonix.o  -o Xonix -rdynamic 

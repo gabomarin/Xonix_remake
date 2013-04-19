@@ -228,7 +228,7 @@ void mainLoop()
 
         //Dibuja en pantalla
         heroe.draw();
-	//drawHud(heroe,poligonos);
+	drawHud(heroe,poligonos);
 
 
         SDL_GL_SwapBuffers();
@@ -451,7 +451,7 @@ void drawHud(Personaje &heroe, vector <Poligono> &poligonos )
     //textura= textToTex( text, textura, tmpfont);
     //glBindTexture( GL_TEXTURE_2D, textura );
 //     SDL_GL_RenderText(text, color, &coord);
-    SDL_GL_RenderText(text, color, textura);
+    SDL_GL_RenderText(text, color, textura,h,w);
     
     
 
