@@ -35,10 +35,12 @@ Remake of the arcade game xonix written in C++
       del proyecto actual.
       
  +Utilizando CMAKE en linux
-  -Utilizando la terminal, navegar a la carpeta raiz del proyecto
-  -Ejecutar el comando:  cmake ../Xonix -G "Unix Makefiles"
-  -Despues este comando: make install (con permisos de administrador)
-  -En la consola aparecera la ruta donde se guardo el ejecutable
+    -Utilizando la terminal, navegar a la carpeta raiz del proyecto
+    -Ejecutar el comando:  cmake ../Xonix -G "Unix Makefiles"
+    -Despues este comando: make install (con permisos de administrador)
+    -En la consola aparecera la ruta donde se guardo el ejecutable
+    -Mover la carpeta "Resources" a la ruta del ejecutable ( en mi caso /usr/local/bin)
+    - Probar el avance del juego
   
   +Windows
     -Aun no probado
