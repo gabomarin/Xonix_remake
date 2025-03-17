@@ -45,6 +45,10 @@ SDL/SDL_opengl.h
 -
 SDL/SDL_image.h
 -
+SDL/SDL_ttf.h
+-
+cmath
+-
 cstdio
 -
 cstdlib
@@ -100,10 +104,6 @@ boost/concept_check.hpp
 xonix.hpp
 /home/gabriel/projects/Xonix/src/../include/xonix.hpp
 
-/home/gabriel/projects/Xonix/src/../include/timer.hpp
-SDL/SDL.h
--
-
 /home/gabriel/projects/Xonix/src/../include/xonix.hpp
 string
 -
@@ -112,6 +112,10 @@ SDL/SDL.h
 SDL/SDL_opengl.h
 -
 SDL/SDL_image.h
+-
+SDL/SDL_ttf.h
+-
+cmath
 -
 cstdio
 -
@@ -134,16 +138,14 @@ boost/concept_check.hpp
 ../include/poligono.hpp
 /home/gabriel/projects/Xonix/src/../include/poligono.hpp
 
-/home/gabriel/projects/Xonix/src/timer.cpp
-../include/timer.hpp
-/home/gabriel/projects/Xonix/src/../include/timer.hpp
-
 /home/gabriel/projects/Xonix/src/xonix.cpp
 SDL/SDL.h
 -
 SDL/SDL_opengl.h
 -
 SDL/SDL_image.h
+-
+SDL/SDL_ttf.h
 -
 ../include/xonix.hpp
 /home/gabriel/projects/Xonix/src/../include/xonix.hpp

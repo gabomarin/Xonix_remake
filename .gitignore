@@ -11,3 +11,36 @@
 *.lai
 *.la
 *.a
+
+# Ignorar directorios de compilación
+/build/
+CMakeFiles/*
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+
+# Ignorar binarios y ejecutables
+*.out
+Xonix
+
+# Ignorar archivos de logs y temporales
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Ignorar archivos generados por el sistema operativo
+.DS_Store
+Thumbs.db
+
+# Ignorar archivos de depuración
+*.dSYM/
+*.stackdump
+
+# Ignorar archivos de configuración de IDEs
+.vscode/
+.idea/
+*.iml
+
+# Ignorar archivos de respaldo
+*~

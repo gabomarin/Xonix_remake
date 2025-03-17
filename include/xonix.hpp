@@ -10,7 +10,7 @@
 #include <cstdio>
 #include <cstdlib>
 #include <ctime>
-
+#include <vector>
 
 using namespace std;
 
@@ -39,11 +39,11 @@ const int LEFT=3;
 const int FRAMES_PER_SECOND = 60;
 
 //Event handler
-SDL_Event event;
-
+extern SDL_Event event;
 
 //Rendering flag
-bool renderQuad = true;
+extern SDL_Rect renderQuad;
+extern bool renderQuadEnabled;
 GLuint surfaceToTex(string file, GLuint& tex);
 
 bool initGL();
@@ -57,7 +57,23 @@ int roundi(double x);
 int nextpoweroftwo(int x);
 void loadFont();
 
-TTF_Font* tmpfont;
-    
+extern TTF_Font* tmpfont;
 
-#endif 
+struct Player {
+    float x, y; // Posición del jugador
+    float speed; // Velocidad del jugador
+    GLuint texture; // Textura del jugador
+};
+
+struct Enemy {
+    float x, y; // Posición del enemigo
+    float dx, dy; // Dirección del movimiento
+    GLuint texture; // Textura del enemigo
+};
+
+void updatePlayer(Player& player, const Uint8* keys);
+void updateEnemies(std::vector<Enemy>& enemies);
+void renderPlayer(const Player& player);
+void renderEnemies(const std::vector<Enemy>& enemies);
+
+#endif
